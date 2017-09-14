@@ -308,7 +308,7 @@ var contract = (function(module) {
 
       var wrapped = new Provider(provider);
       this.web3.setProvider(wrapped);
-      this.currentProvider = provider;
+      this.currentProvider = wrapped;
     },
 
     new: function() {
